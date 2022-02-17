@@ -6,9 +6,9 @@ int main()
     char input[15] = "123.456.789.255";
     char *tmp;
     int  ipSeg[4];  // store the segmented ip
-    int  ipResult; // result of 
+    int  ipResult; // result of 32 bit decimal
     
-    tmp = strtok(input, "."); //Segmenti ip into 4 part
+    tmp = strtok(input, "."); //Segment ip into 4 part
     ipSeg[0] = atoi(tmp);
     
     for(int i = 1 ; i < 4 ; i++){
